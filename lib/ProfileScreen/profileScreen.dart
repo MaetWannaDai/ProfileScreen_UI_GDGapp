@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:profile_screen_app/widgets/homescreen.dart';
 import 'In_ProfileScreen/avatar.dart';
 import 'In_ProfileScreen/background_image.dart';
 import 'In_ProfileScreen/save_button.dart';
@@ -102,7 +101,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     ],
                   ),
                 ),
-                const Homescreen(),
               ],
             ),
           ),

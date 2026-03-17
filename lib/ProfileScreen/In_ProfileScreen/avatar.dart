@@ -29,7 +29,7 @@ class _ProfileAvatarState extends State<ProfileAvatar> {
     return Stack(
       children: [
         InkWell(
-          onTap: _pickImage, 
+          onTap: () => _pickImage(), 
           borderRadius: BorderRadius.circular(45.r),
           child: CircleAvatar(
             radius: 45.r,
@@ -48,7 +48,7 @@ class _ProfileAvatarState extends State<ProfileAvatar> {
               radius: 14.r,
               backgroundColor: const Color.fromARGB(255, 255, 255, 255),
               child: InkWell(
-                onTap: _pickImage, 
+                onTap: () => _pickImage(),
                 borderRadius: BorderRadius.circular(14.r),
                 child: Icon(Icons.camera_alt, color: const Color(0xFF666C73), size: 16.w),
               ),

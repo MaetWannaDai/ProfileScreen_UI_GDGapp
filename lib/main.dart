@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'ProfileScreen/ProfileScreen.dart';
+import 'homscreen/homescreen.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Profile',
-          home: const ProfileScreen(),
+          home: const Homescreen(),
         );
       },
     );
