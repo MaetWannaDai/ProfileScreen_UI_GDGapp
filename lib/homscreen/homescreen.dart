@@ -28,13 +28,13 @@ class _HomescreenState extends State<Homescreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Theme.of(context).colorScheme.primary,
       body: _pages[_selectedIndex],
       bottomNavigationBar: Container(
         margin: EdgeInsets.only(left: 20.w, right: 20.w, bottom: 30.h),
         padding: EdgeInsets.symmetric(vertical: 10.h),
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: Theme.of(context).colorScheme.primary,
           borderRadius: BorderRadius.circular(35.r),
           boxShadow: [
             BoxShadow(

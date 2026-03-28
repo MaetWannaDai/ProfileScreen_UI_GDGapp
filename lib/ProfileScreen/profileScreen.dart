@@ -13,6 +13,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.primary,
       body: Stack(
         children: [
           SingleChildScrollView(
@@ -73,10 +74,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         children: [
                           Text('202412345', style: TextStyle(fontSize: 24.sp, fontWeight: FontWeight.w400)),
                           SizedBox(width: 8.w),
-                          Text('#username', style: TextStyle(color: const Color(0xFF666C73), fontSize: 14.sp)),
+                          Text('#username', style: TextStyle(color: Theme.of(context).colorScheme.secondary, fontSize: 14.sp)),
                         ],
                       ),
-                      Text('Dev team member', style: TextStyle(color: const Color(0xFF666C73), fontSize: 14.sp)),
+                      Text('Dev team member', style: TextStyle(color: Theme.of(context).colorScheme.secondary, fontSize: 14.sp)),
                       
                       SizedBox(height: 20.h),
                       _buildFieldLabel('Display name'),
@@ -145,7 +146,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         ),
         style: TextStyle(
           fontSize: 16.sp,
-          color: Colors.black,
+          color: Theme.of(context).colorScheme.secondary
         ),
 
         decoration: InputDecoration(
@@ -157,7 +158,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           contentPadding: EdgeInsets.symmetric(horizontal: 16.w),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8.r),
-            borderSide: const BorderSide(color: Color.fromARGB(255, 85, 85, 85)),
+            borderSide: BorderSide(color: Theme.of(context).colorScheme.secondary),
           ),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8.r),
